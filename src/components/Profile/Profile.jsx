@@ -1,6 +1,7 @@
 // import PropTypes from 'prop-types';
 // import { Description } from './Profile.styled';
 import css from './Profile.module.css';
+
 export const Profile = ({
   username,
   tag,
