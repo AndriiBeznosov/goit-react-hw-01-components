@@ -1,27 +1,43 @@
+import css from './App.module.css';
 import { Profile } from '../Profile/Profile';
-import data from '../data/user.json';
+import { StatisticsTitle } from '../StatisticsTitle/StatisticsTitle';
+import { StatisticsList } from '../StatisticsList/StatisticsList';
+import { FriendList } from '../FriendList/FriendList';
+import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
+import user from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        flexDirection: 'column',
         fontSize: 40,
         color: '#010101',
+        paddingTop: 20,
       }}
     >
       <Profile
-        username={data.username}
-        tag={data.tag}
-        location={data.location}
-        avatar={data.avatar}
-        followers={data.stats.followers}
-        views={data.stats.views}
-        likes={data.stats.likes}
-      ></Profile>
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
+      <section className={css.statistics}>
+        <StatisticsTitle text="Upload stats" />
+        <StatisticsList events={data} />
+      </section>
+
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

@@ -49,7 +49,6 @@
 .stats {
   display: flex;
   width: 100%;
-  flex-basis: calc(100% / 3);
   border-top: 2px solid rgba(84, 84, 84, 0.458);
 }
 .label {
