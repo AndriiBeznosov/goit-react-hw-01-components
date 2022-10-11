@@ -15,26 +15,12 @@
 .label {
   margin-bottom: 8px;
   font-size: 24px;
-  color: rgb(84, 84, 84);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px 3px #212121;
 }
 .percentage {
   font-size: 34px;
-  color: black;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 2px 3px #212121;
   font-weight: 700;
 }
-
-/* #id-1 {
-  background-color: rgb(92, 170, 204);
-}
-#id-2 {
-  background-color: rgb(160, 37, 231);
-}
-#id-3 {
-  background-color: rgb(255, 81, 46);
-}
-#id-4 {
-  background-color: rgb(49, 243, 136);
-}
-#id-5 {
-  background-color: rgb(92, 170, 204);
-} */

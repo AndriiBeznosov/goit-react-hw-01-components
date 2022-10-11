@@ -1,4 +1,16 @@
-/* @import-normalize; bring in normalize.css styles */
+/* @import-normalize; */
+
+/* :root {
+  --background-color: rgb(253, 238, 238);
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: rgb(255, 0, 0);
+  --color-text-premiry: #212121;
+  --color-text: rgb(84, 84, 84);
+  --border-primary: 2px solid rgba(84, 84, 84, 0.4);
+  --box-shadow-primary: 0px 1px 10px 1px rgba(0, 0, 0, 0.75);
+  --box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.75);
+} */
 
 body {
   margin: 0;
