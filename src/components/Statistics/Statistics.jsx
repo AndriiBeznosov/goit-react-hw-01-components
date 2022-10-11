@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import css from './StatisticsList.module.css';
+import css from './Statistics.module.css';
 import { StatisticsColor } from './StatisticsColor';
 
-export const StatisticsList = ({ events }) => {
+export const Statistics = ({ events }) => {
   return (
     <ul className={css.statList}>
       {events.map(({ id, label, percentage }) => (
@@ -20,7 +20,7 @@ export const StatisticsList = ({ events }) => {
   );
 };
 
-StatisticsList.propTypes = {
+Statistics.propTypes = {
   label: PropTypes.string,
   percentage: PropTypes.number,
   id: PropTypes.string,
